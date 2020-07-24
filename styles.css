@@ -1,5 +1,3 @@
-/* bring contact buttons down by 75px, fix email button with email attached and also where you click, and upload all changes to github. */
-
 * {
     margin: 0;
     padding: 0;
@@ -117,7 +115,6 @@ p
     margin-top: 50px;
     margin-right: 300px;
     margin-left: 300px;
-
 }
 
 .img1
