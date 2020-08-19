@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <link href="bootstrap-social.css" rel="stylesheet">
+        <link href="hover-min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jake Dvorak's GIS Portfolio</title>
+    </head>
+    <body>
+        <div class="hero-image">
+          <div class="hero-text">
+            <img class="avatar" src="jake.png" alt="Avatar">
+            <p class="head1">Jake Dvorak</p>
+            <p>B.A. Geography</p>
+            <a class="hvr-underline-from-center" href="home.html" role="button">Home</a>
+            <a class="hvr-underline-from-center" href="gisportfolio.html" role="button">GIS Portfolio</a>
+            <a class="hvr-underline-from-center" href="contact.html" role="button">Contact</a>
+          </div>
+        </div>
+
+
+<!--fix this email button-->
+        <script>
+            function AdvancedCopy() {
+                var theText = 'dvorj80@gmail.com';
+                
+                var hiddenCopy = document.createElement('div');
+                hiddenCopy.innerHTML = theText;
+                hiddenCopy.style.position = 'absolute';
+                hiddenCopy.style.left = '-9999px';
+                
+                var currentRange;
+                if(document.getSelection().rangeCount > 0)
+                {
+                    currentRange = document.getSelection().getRangeAt(0);
+                    window.getSelection().removeRange(currentRange);
+                }
+                else
+                {
+                    currentRange = false;
+                }
+                document.body.appendChild(hiddenCopy);
+                var CopyRange = document.createRange();
+                CopyRange.selectNode(hiddenCopy);
+                window.getSelection().addRange(CopyRange);
+                
+                try
+                {
+                    document.execCommand('copy');
+                }
+                catch(err)
+                {
+                    window.alert("Your browser doesn't support this! Error : " + err);
+                }
+                window.getSelection().removeRange(CopyRange);
+                document.body.removeChild(hiddenCopy);
+                
+                if(currentRange)
+                {
+                    window.getSelection().addRange(currentRange);
+                }
+            }
+        </script>
+        <script>
+            function Alert() {
+                alert("Email address copied to clipboard!");
+                
+            }
+        </script>
+
+        <div id="container">
+            <div id="main">
+                <br>
+                <br>
+                <button onclick="AdvancedCopy(); Alert()" class="btn btn-danger btn-social btn-google" style="color: white"><span class="fa fa-google"></span> Email me at dvorj80@gmail.com</button> 
+                <br>
+                <br>
+                <br>
+                <a class="btn btn-primary btn-social btn-linkedin" href="https://www.linkedin.com/in/jake-dvorak/" role="button"><span class="fa fa-linkedin-square"></span> Connect with me on LinkedIn</a>
+                <br>
+                <br>
+                <br>
+                <a class="btn btn-dark btn-social btn-github" href="https://github.com/JakeDvorak" role="button"><span class="fa fa-github-square"></span> Find me on GitHub</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96558.26161512271!2d-73.28458005567181!3d40.86209264681213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e83a4302f92fc3%3A0x1c89c04bdb222bde!2sSmithtown%2C%20NY!5e0!3m2!1sen!2sus!4v1595558626798!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                <p class="mapdesc">The map above shows Smithtown, NY, my hometown. Smithtown is a large town made up of five hamlets, situated on the north shore of Long Island, NY. I currently live there and plan to seek employment somewhere close by, either on Long Island or in New York City, once I complete my graduate studies.</p>
+                <br>
+                <br>
+                <br>
+        <!--THIS IS THE MAP ABOVE-->
+            </div>
+        </div>
+
+        <footer id="footer">
+            <img class="img1" src="newpaltzlogo.jpg" alt="The State University of New York at New Paltz is Jake's alma mater." title="State University of New York at New Paltz">
+            <img class="img2" src="HUNTER-LOGO.jpg" alt="Jake is currently enrolled at Hunter College." title="Hunter College">
+            <br>
+            <br>
+            <p class="footertext">This web page was programmed by Jake Dvorak using HTML, CSS, and JavaScript.</p>
+            <p class="footertext">This is a work in progress.</p>
+        </footer>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    </body>
+</html>
