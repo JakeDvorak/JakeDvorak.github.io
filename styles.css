@@ -29,8 +29,8 @@ body, html
     background-image: url("binaryworld.png");
     background-size: cover;
     background-repeat: repeat;
-    position: absolute;
-    top: 40%;
+    position: fixed;
+    top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
