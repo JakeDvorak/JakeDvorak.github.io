@@ -9,7 +9,6 @@ body
 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-
 }
 
 body, html
@@ -28,7 +27,6 @@ body, html
     z-index: -1;
     background-image: url("binaryworld.png");
     background-size: cover;
-    background-repeat: repeat;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -133,7 +131,9 @@ p
 {
     text-align: center;
     color: black;
-    font-size: 110%;
+    font-size: 120%;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 
 .portpic
@@ -332,11 +332,11 @@ p
 .mapdesc
 {
     color: black;
-    font-size: 110%;
+    font-size: 125%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-right: 375px;
-    margin-left: 375px;
+    margin-right: 300px;
+    margin-left: 300px;
     position: relative;
 }
 
